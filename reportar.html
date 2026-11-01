@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar rescate | Sistema de Rescate Animal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+        <p>Registro de animales rescatados</p>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar rescate</a></li>
+                <li><a href="rescates.html">Listado de rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="titulo-reporte">
+            <h2 id="titulo-reporte">Reportar un nuevo rescate</h2>
+            <p>
+                Complete los siguientes campos para registrar
+                la información inicial del animal rescatado.
+            </p>
+
+            <article>
+                <h3>Datos del rescate</h3>
+
+                <form action="reportar.html" method="get">
+
+                    <p>
+                        <label for="nombre">
+                            Nombre provisional o título del caso:
+                        </label>
+                        <input type="text" id="nombre"
+                               name="nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="categoria">
+                            Categoría del animal:
+                        </label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Seleccione una categoría</option>
+                            <option value="perro">Perros</option>
+                            <option value="gato">Gatos</option>
+                            <option value="fauna">Fauna Silvestre</option>
+                        </select>
+                    </p>
+
+                    <fieldset>
+                        <legend>Nivel de urgencia médica:</legend>
+
+                        <input type="radio" id="alta"
+                               name="urgencia" value="alta" required>
+                        <label for="alta">Alta</label>
+
+                        <input type="radio" id="media"
+                               name="urgencia" value="media">
+                        <label for="media">Media</label>
+
+                        <input type="radio" id="baja"
+                               name="urgencia" value="baja">
+                        <label for="baja">Baja</label>
+                    </fieldset>
+
+                    <p>
+                        <label for="descripcion">
+                            Descripción del estado del animal:
+                        </label>
+                    </p>
+
+                    <p>
+                        <textarea id="descripcion"
+                                  name="descripcion"
+                                  rows="6" cols="50"
+                                  required></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar reporte</button>
+                        <button type="reset">Limpiar formulario</button>
+                    </p>
+
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Sistema de Control de Rescate y Adopción Animal
+            - Proyecto académico UTM 2026
+        </p>
+    </footer>
+
+</body>
+</html>
