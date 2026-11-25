@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca de componentes UI para el sistema de rescate y adopción animal">
+    <title>Rescate Animal - Prueba UI Kit</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Encabezado principal -->
+    <header class="encabezado">
+        <div class="contenedor">
+            <h1>Rescate Animal Prueba</h1>
+            <p>Biblioteca de componentes UI - Design System</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <!-- Presentación -->
+        <section class="seccion">
+            <h2>Componentes de interfaz</h2>
+            <p>
+                Esta página presenta los componentes reutilizables
+                desarrollados para el sistema de gestión de rescate
+                y adopción animal.
+            </p>
+        </section>
+
+        <!-- Botones -->
+        <section class="seccion">
+            <h2>1. Botones</h2>
+            <p>Ejemplos de botones con diferentes funciones y estilos.</p>
+
+            <div class="grupo-componentes">
+                <button type="button" class="btn btn-primary">
+                    Registrar rescate
+                </button>
+
+                <button type="button" class="btn btn-secondary">
+                    Consultar casos
+                </button>
+
+                <button type="button" class="btn btn-danger">
+                    Eliminar registro
+                </button>
+            </div>
+        </section>
+
+        <!-- Formularios -->
+        <section class="seccion">
+            <h2>2. Formularios</h2>
+            <p>Campos para registrar información de un animal rescatado.</p>
+
+            <form class="formulario">
+
+                <div class="campo">
+                    <label for="nombre">Nombre del animal:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ej. Max"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="tipo">Tipo de animal:</label>
+                    <select id="tipo" name="tipo">
+                        <option value="">Seleccione una opción</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="ubicacion">Lugar del rescate:</label>
+                    <input
+                        type="text"
+                        id="ubicacion"
+                        name="ubicacion"
+                        placeholder="Ingrese la ubicación"
+                    >
+                </div>
+
+                <button type="button" class="btn btn-primary">
+                    Guardar información
+                </button>
+
+            </form>
+        </section>
+
+        <!-- Tarjetas -->
+        <section class="seccion">
+            <h2>3. Tarjetas de animales rescatados</h2>
+            <p>Ejemplos de tarjetas para mostrar información de los casos.</p>
+
+            <div class="rejilla-tarjetas">
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <span class="badge badge-alta">Urgencia alta</span>
+
+                        <h3>Bethoven</h3>
+
+                        <p><strong>Tipo:</strong> Perro</p>
+                        <p><strong>Estado:</strong> En tratamiento</p>
+                        <p><strong>Ubicación:</strong> Portoviejo</p>
+
+                        <button type="button" class="btn btn-primary">
+                            Ver información
+                        </button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <span class="badge badge-media">Urgencia media</span>
+
+                        <h3>Chimuelo</h3>
+
+                        <p><strong>Tipo:</strong> Gato</p>
+                        <p><strong>Estado:</strong> En recuperación</p>
+                        <p><strong>Ubicación:</strong> Manta</p>
+
+                        <button type="button" class="btn btn-primary">
+                            Ver información
+                        </button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <span class="badge badge-baja">Urgencia baja</span>
+
+                        <h3>Lady</h3>
+
+                        <p><strong>Tipo:</strong> Perro</p>
+                        <p><strong>Estado:</strong> Disponible para adopción</p>
+                        <p><strong>Ubicación:</strong> Chone</p>
+
+                        <button type="button" class="btn btn-primary">
+                            Ver información
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Etiquetas -->
+        <section class="seccion">
+            <h2>4. Etiquetas de estado y urgencia</h2>
+            <p>Identificación visual de la prioridad de los casos.</p>
+
+            <div class="grupo-componentes">
+                <span class="badge badge-alta">Alta</span>
+                <span class="badge badge-media">Media</span>
+                <span class="badge badge-baja">Baja</span>
+                <span class="badge badge-estado">Rescatado</span>
+                <span class="badge badge-tratamiento">En tratamiento</span>
+                <span class="badge badge-adopcion">En adopción</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <p>Sistema de Control de Rescate y Adopción Animal</p>
+        <p>Demostración de biblioteca de componentes UI</p>
+    </footer>
+
+</body>
+</html>
+
+
